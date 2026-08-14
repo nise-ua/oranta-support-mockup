@@ -1,10 +1,10 @@
 # Campaigns
 
-## TACTICAL MEDICINE
+## Tactical Medicine
 
 Providing lifesaving medical supplies, training, and equipment to those working in high-risk environments and emergency situations.
 
-## PHARMACOLOGY & GENERAL MEDICINE
+## Pharmacology & General Medicine
 
 Delivering medications, medical supplies, and healthcare support to civilians who may otherwise go without essential treatment and care.
 

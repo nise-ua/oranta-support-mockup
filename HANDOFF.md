@@ -29,8 +29,8 @@ Two columns under the header:
 
 Below the ticker: three campaign cards (photo, title, body, Support → `#donation-options`) from `content/campaigns.md`:
 
-1. **TACTICAL MEDICINE** — `assets/photo-tactical-medicine-kits.png`
-2. **PHARMACOLOGY & GENERAL MEDICINE** — `assets/campaign-pharmacology.png`
+1. **Tactical Medicine** — `assets/photo-tactical-medicine-kits.png`
+2. **Pharmacology & General Medicine** — `assets/campaign-pharmacology.png`
 3. **Animal Rescue & Care** — `assets/campaign-animal-rescue.png`
 
 Then a stub footer.
