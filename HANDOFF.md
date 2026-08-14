@@ -1,10 +1,12 @@
 # Oranta Support page — handoff
 
-**Source of truth:** local HTML mockup (`mockup/`). Figma is behind and blocked by MCP quota.
+**Source of truth:** local HTML mockup (`mockup/`). All current changes are local to the mockup; the Figma file has not been updated and is blocked by the MCP quota.
 
 Open: `mockup/index.html` or `http://127.0.0.1:8765/mockup/` if the local server is running (`python3 -m http.server 8765` from the repo root).
 
 Files: `mockup/index.html`, `mockup/styles.css`, `mockup/script.js`.
+
+**Current local-only updates:** page backgrounds are white, external object borders have been removed, and the language switcher uses UA 🇺🇦 / EN 🇬🇧 buttons.
 
 ## Current layout (as built)
 
@@ -19,7 +21,7 @@ Two columns under the header:
 
 - **Left:** Text 1 (`content/text-1-thank-you.md`)
 - **Right, one shared rectangle:**
-  - **Donation Options** accordion — collapsed by default; title + `+`. Expanded: Text 2 intro, then boxed rows for Zelle, PayPal, Personal or business checks payable, Cash donations, and the **“In addition…”** paragraph in the **same boxed row style** as Cash donations (sentence case, not all-caps). Do not use Mariah.
+  - **Donation Options** accordion — collapsed by default; title + `+`. Expanded: Text 2 intro, then rows for Zelle, PayPal, Personal or business checks payable, Cash donations, and the **“In addition…”** paragraph (sentence case, not all-caps). Do not use Mariah.
   - **THE IRS INFO** accordion — same pattern as Donation Options (title + `+`, collapsed by default), **inside the same panel**, not a second rectangle. Copy from `content/text-3-irs-info.md`. EIN stays `[INSERT EIN NUMBER]`.
 - **Photo** immediately under that panel, **same width as the right column / IRS stack** (`assets/photo-tactical-medicine-kits.png`). Not full viewport width.
 
