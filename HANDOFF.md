@@ -35,6 +35,18 @@ Below the ticker: three campaign cards (photo, title, body, Support → `#donati
 
 Then a stub footer.
 
+## Mobile validation
+
+Validate responsive header changes in a real browser at a 390px viewport, not only by reading the CSS:
+
+1. Open `http://127.0.0.1:8765/mockup/` with the local server running.
+2. Confirm the logo and the flags/Donate group share one row and are vertically centered.
+3. Confirm the navigation is on the row below, and only the UA/UK and GB flags are visible (the `UA`/`EN` labels are hidden).
+4. Measure the rendered bounding boxes: the logo image center Y and header-actions center Y must match.
+5. Capture a screenshot for visual confirmation after every responsive-header change.
+
+The responsive header rules apply through `980px`; the stylesheet link uses a version query (currently `styles.css?v=7`) so deployed browsers do not retain a stale cached layout.
+
 ## Figma file (paused)
 
 - Name: **Oranta — Support page**
