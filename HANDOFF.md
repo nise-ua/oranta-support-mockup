@@ -1,116 +1,34 @@
-# Oranta Support page — handoff
+# Handoff — current session
 
-**Source of truth:** local HTML mockup (`mockup/`). All current changes are local to the mockup; the Figma file has not been updated and is blocked by the MCP quota.
+Durable project map: `AGENTS.md`. Spec: `mockup/`.
 
-Open: `mockup/index.html` or `http://127.0.0.1:8765/mockup/` if the local server is running (`python3 -m http.server 8765` from the repo root).
+**Status:** all current changes are local to the mockup. Figma is **not** updated.
 
-Files: `mockup/index.html`, `mockup/styles.css`, `mockup/script.js`.
+Open: `mockup/index.html` or `http://127.0.0.1:8765/mockup/` (`python3 -m http.server 8765` from repo root).
 
-**Current local-only updates:** the header uses a distinct soft blue-gray background (`#f1f5f8`) while the remaining page stays white, external object borders have been removed, the language switcher uses UA 🇺🇦 / EN 🇬🇧 buttons with a soft blue-gray active state and switches all page copy, the provided horizontal Oranta logo is loaded from `assets/logo-oranta-horizontal.png`, the main thank-you copy has been replaced with the latest text in `content/text-1-thank-you.md`, donation contact details are populated with clickable Zelle/PayPal email links, donation values use regular sentence case, and the EIN `39-2800449` appears on its own line without a highlight.
+## Last local updates
 
-## Current layout (as built)
-
-Header, left → right (nothing else):
-
-1. Logo image (`assets/logo-oranta-horizontal.png`) — provided horizontal icon + ORANTA wordmark
-2. Nav plate (flush items with hairline dividers, no external border): About / **Projects** / Request Help / **Reports**
-3. Languages: **EN selected**, UA inactive; buttons show `UA 🇺🇦` / `EN 🇬🇧` and switch the page between English and Ukrainian copy
-4. Donate (scrolls to Donation Options)
-
-Two columns under the header:
-
-- **Left:** Text 1 (`content/text-1-thank-you.md`)
-- **Right, one shared rectangle:**
-  - **Donation Options** accordion — collapsed by default; title + `+`. Expanded: Text 2 intro, then Zelle and PayPal rows with clickable `Oranta.UA.USA@gmail.com` links, checks payable to Oranta with “Donation” in the memo line, cash donations at community events and fundraisers, and the “In addition…” paragraph. Do not use Mariah.
-  - **IRS Information** accordion — same pattern as Donation Options (title + `+`, collapsed by default), **inside the same panel**, not a second rectangle. Copy from `content/text-3-irs-info.md`. EIN is `39-2800449`.
-- **Photo** immediately under that panel, **same width as the right column / IRS stack** (`assets/photo-irs-info.jpg`). Not full viewport width.
-
-**Running line** is full viewport width, **below the two-column + photo block** (not constrained to the right column). Copy: `YOUR DONATIONS ARE SAVING LIVES` (`content/running-line.txt`). Repeat as a marquee.
-
-Below the ticker: three campaign cards (photo, title, body, Support → `#donation-options`) from `content/campaigns.md`:
-
-1. **Tactical Medicine** — `assets/photo-tactical-medicine-kits.png`
-2. **Pharmacology & General Medicine** — `assets/campaign-pharmacology.png`
-3. **Animal Rescue & Care** — `assets/campaign-animal-rescue.png`
-
-Then a stub footer.
-
-## Mobile validation
-
-Validate responsive header changes in a real browser at a 390px viewport, not only by reading the CSS:
-
-1. Open `http://127.0.0.1:8765/mockup/` with the local server running.
-2. Confirm the logo and the flags/Donate group share one row and are vertically centered.
-3. Confirm the navigation is on the row below, and only the UA/UK and GB flags are visible (the `UA`/`EN` labels are hidden).
-4. Measure the rendered bounding boxes: the logo image center Y and header-actions center Y must match.
-5. Capture a screenshot for visual confirmation after every responsive-header change.
-
-The responsive header rules apply through `980px`; the stylesheet link uses a version query (currently `styles.css?v=7`) so deployed browsers do not retain a stale cached layout.
-
-## Figma file (paused)
-
-- Name: **Oranta — Support page**
-- URL: https://www.figma.com/design/PF0o03xuRtvauXpt30xvpn
-- File key: `PF0o03xuRtvauXpt30xvpn`
-- Plan: `team::1669906163328840281` (Nickolay Sergeenkov's team, Starter, **View** seat)
-- Wrapper: `Oranta — Support` — `3:9` (1440px)
-- Header: `3:10` (still old: text logo `oranta`, PROJECT, REPORTS AND QUESTIONS, UA selected)
-- Placeholders: Hero `3:11`, Picture potential `3:12`, Slogan `3:13`, Campaigns `3:14`, Footer `3:15`
-- Nav Item set `5:135` (`Label#5:0`)
-- SDS Button key `cc8b558dc7d9684011b6b99ce8e6509399bc836b`
-
-**Blocker:** Figma MCP Starter + View = ~20 tool calls/month. `whoami` works; `use_figma` / `upload_assets` / `get_metadata` return the paywall. Upgrade: https://www.figma.com/files/team/1669906163328840281/all-projects?upgrade=mcp_rate_limit_paywall — need Full/Dev seat. `generate_figma_design` is listed as rate-limit exempt; untried after the HTML mockup existed.
-
-When MCP works: match **this mockup**, not the old Figma placeholders. Upload logo + photo, then rebuild header/hero to the rules above.
-
-Skills: `figma-use` before every `use_figma`; `figma-generate-design` for page assembly; `upload_assets` then copy `imageHash`. Library: Simple Design System only.
-
-## Visual reference
-
-https://en.ptahy.vidchui.org/support — off-white, high-contrast black, Montserrat, thin dividers, pill buttons. The local mockup uses a separate soft blue-gray header background, a white page background, and no external object borders. Wireframe: `assets/wireframe-oranta-support.png`. Client header/accordion rules override the sketch.
-
-## Assets / copy
-
-See `assets/README.md`.
-
-| Use | Path |
-| --- | --- |
-| Logo | `assets/logo-oranta-horizontal.png` |
-| Photo under IRS column | `assets/photo-irs-info.jpg` |
-| Tactical medicine campaign photo | `assets/photo-tactical-medicine-kits.png` |
-| Wireframe | `assets/wireframe-oranta-support.png` |
-| Text 1 | `content/text-1-thank-you.md` |
-| Text 2 | `content/text-2-donation-options.md` |
-| Text 3 | `content/text-3-irs-info.md` |
-| Running line | `content/running-line.txt` |
-| Header labels | `content/header.txt` |
-| Campaign cards | `content/campaigns.md` |
-| Campaign photos | `assets/campaign-tactical-medicine.png`, `campaign-pharmacology.png`, `campaign-animal-rescue.png` |
-
-## SDS tokens (for Figma later)
-
-| Token | Key |
-| --- | --- |
-| Background/Default/Default | `a4865545b526a5b3399a512667f40c9efe0c2fc4` |
-| Background/Default/Tertiary | `3fe6117980bb52e96ac3ed63a40765746e689874` |
-| Background/Default/Secondary | `34f184ba91e9ebb52258b767a603f5c2c97956a2` |
-| Background/Brand/Default | `69276caf7d902cb108d2f8f6463078190f11e0ac` |
-| Text/Default/Default | `cf92d4e8c6a5a5ed82f024d47d11c21d5162ac3c` |
-| Border/Default/Default | `395870afebb3397e858358930ffdd69a5ec0f73d` |
-| Space/200 | `15bb1c0f339146e931cf0dc15f89ed57dcbd907e` |
-| Space/400 | `16bc6f84b6e7e20e4234ef79030ee580ec0f4505` |
-| Space/600 | `be3115966ea99eef888c9f25751b54695c7e88d2` |
-| Space/800 | `9acadea8b7c7c9884455b896e21c88b8bc62d6da` |
-| Radius/Full | `15d41e10759196590418df58d5bb77642991e569` |
-
-Typography: Montserrat ExtraBold / Bold.
+- Header background `#f1f5f8`; page body white; no external object borders
+- Language switcher: UA 🇺🇦 / EN 🇬🇧, switches all page copy
+- Horizontal logo: `assets/logo-oranta-horizontal.png`
+- Thank-you copy from `content/text-1-thank-you.md`
+- Donation contacts: clickable Zelle/PayPal mailto links
+- Donation values in sentence case; EIN `39-2800449` on its own unhighlighted line
+- Stylesheet cache-bust is currently `styles.css?v=8`
 
 ## Resume checklist
 
-HTML mockup is the spec. Remaining product copy:
+- Footer links and contact still stub
+- Ukrainian copy is in the mockup and `content/*-ua.*`
+- When Figma MCP works: upload logo + photos, rebuild the file to match `mockup/`
 
-- Real EIN
-- Footer links and contact
-- Ukrainian translations (implemented in the mockup and `content/*-ua.*` source files)
+## Figma (paused)
 
-When Figma MCP is available: upload assets, rebuild the Figma file to match `mockup/`.
+- File: [Oranta — Support page](https://www.figma.com/design/PF0o03xuRtvauXpt30xvpn) (`PF0o03xuRtvauXpt30xvpn`)
+- Plan: `team::1669906163328840281` (Starter, **View** seat)
+- Wrapper `3:9` (1440px). Header `3:10` is still the old design. Placeholders: Hero `3:11`, Picture `3:12`, Slogan `3:13`, Campaigns `3:14`, Footer `3:15`
+- Nav Item set `5:135` (`Label#5:0`). SDS Button key `cc8b558dc7d9684011b6b99ce8e6509399bc836b`
+- **Blocker:** Starter + View ≈ 20 MCP calls/month. `whoami` works; `use_figma` / `upload_assets` / `get_metadata` hit the paywall. Upgrade: https://www.figma.com/files/team/1669906163328840281/all-projects?upgrade=mcp_rate_limit_paywall
+- Library: Simple Design System only. Token keys (Background/Text/Border/Space/Radius) are in git history of this file if needed later.
+
+Skills: `figma-use` before every `use_figma`; `figma-generate-design` for page assembly; `upload_assets` then copy `imageHash`.
