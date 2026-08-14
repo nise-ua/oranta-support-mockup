@@ -6,7 +6,7 @@ Open: `mockup/index.html` or `http://127.0.0.1:8765/mockup/` if the local server
 
 Files: `mockup/index.html`, `mockup/styles.css`, `mockup/script.js`.
 
-**Current local-only updates:** page backgrounds are white, external object borders have been removed, the language switcher uses UA 🇺🇦 / EN 🇬🇧 buttons with a soft blue-gray active state, and the provided horizontal Oranta logo is loaded from `assets/logo-oranta-horizontal.png`.
+**Current local-only updates:** the header uses a distinct soft blue-gray background (`#f1f5f8`) while the remaining page stays white, external object borders have been removed, the language switcher uses UA 🇺🇦 / EN 🇬🇧 buttons with a soft blue-gray active state, the provided horizontal Oranta logo is loaded from `assets/logo-oranta-horizontal.png`, the main thank-you copy has been replaced with the latest text in `content/text-1-thank-you.md`, donation contact details are populated with clickable Zelle/PayPal email links, donation values use regular sentence case, and the EIN `39-2800449` appears on its own line without a highlight.
 
 ## Current layout (as built)
 
@@ -21,16 +21,16 @@ Two columns under the header:
 
 - **Left:** Text 1 (`content/text-1-thank-you.md`)
 - **Right, one shared rectangle:**
-  - **Donation Options** accordion — collapsed by default; title + `+`. Expanded: Text 2 intro, then rows for Zelle, PayPal, Personal or business checks payable, Cash donations, and the **“In addition…”** paragraph (sentence case, not all-caps). Do not use Mariah.
-  - **THE IRS INFO** accordion — same pattern as Donation Options (title + `+`, collapsed by default), **inside the same panel**, not a second rectangle. Copy from `content/text-3-irs-info.md`. EIN stays `[INSERT EIN NUMBER]`.
-- **Photo** immediately under that panel, **same width as the right column / IRS stack** (`assets/photo-tactical-medicine-kits.png`). Not full viewport width.
+  - **Donation Options** accordion — collapsed by default; title + `+`. Expanded: Text 2 intro, then Zelle and PayPal rows with clickable `Oranta.UA.USA@gmail.com` links, checks payable to Oranta with “Donation” in the memo line, cash donations at community events and fundraisers, and the “In addition…” paragraph. Do not use Mariah.
+  - **THE IRS INFO** accordion — same pattern as Donation Options (title + `+`, collapsed by default), **inside the same panel**, not a second rectangle. Copy from `content/text-3-irs-info.md`. EIN is `39-2800449`.
+- **Photo** immediately under that panel, **same width as the right column / IRS stack** (`assets/photo-irs-info.jpg`). Not full viewport width.
 
-**Running line** is full viewport width, **below the two-column + photo block** (not constrained to the right column). Copy: `Donate for tactical medicine.` (`content/running-line.txt`). Repeat as a marquee.
+**Running line** is full viewport width, **below the two-column + photo block** (not constrained to the right column). Copy: `YOUR DONATIONS ARE SAVING LIVES` (`content/running-line.txt`). Repeat as a marquee.
 
 Below the ticker: three campaign cards (photo, title, body, Support → `#donation-options`) from `content/campaigns.md`:
 
-1. **TACTICAL MEDICINE** — `assets/campaign-tactical-medicine.png`
-2. **PHARMACOLOGY AND GENERAL MEDICINE** — `assets/campaign-pharmacology.png`
+1. **TACTICAL MEDICINE** — `assets/photo-tactical-medicine-kits.png`
+2. **PHARMACOLOGY & GENERAL MEDICINE** — `assets/campaign-pharmacology.png`
 3. **Animal Rescue & Care** — `assets/campaign-animal-rescue.png`
 
 Then a stub footer.
@@ -55,7 +55,7 @@ Skills: `figma-use` before every `use_figma`; `figma-generate-design` for page a
 
 ## Visual reference
 
-https://en.ptahy.vidchui.org/support — off-white, high-contrast black, Montserrat, thin dividers, pill buttons. The local mockup overrides the reference with a white background and no external object borders. Wireframe: `assets/wireframe-oranta-support.png`. Client header/accordion rules override the sketch.
+https://en.ptahy.vidchui.org/support — off-white, high-contrast black, Montserrat, thin dividers, pill buttons. The local mockup uses a separate soft blue-gray header background, a white page background, and no external object borders. Wireframe: `assets/wireframe-oranta-support.png`. Client header/accordion rules override the sketch.
 
 ## Assets / copy
 
@@ -64,7 +64,8 @@ See `assets/README.md`.
 | Use | Path |
 | --- | --- |
 | Logo | `assets/logo-oranta-horizontal.png` |
-| Photo under IRS column | `assets/photo-tactical-medicine-kits.png` |
+| Photo under IRS column | `assets/photo-irs-info.jpg` |
+| Tactical medicine campaign photo | `assets/photo-tactical-medicine-kits.png` |
 | Wireframe | `assets/wireframe-oranta-support.png` |
 | Text 1 | `content/text-1-thank-you.md` |
 | Text 2 | `content/text-2-donation-options.md` |
