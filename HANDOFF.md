@@ -6,7 +6,7 @@ Open: `mockup/index.html` or `http://127.0.0.1:8765/mockup/` if the local server
 
 Files: `mockup/index.html`, `mockup/styles.css`, `mockup/script.js`.
 
-**Current local-only updates:** the header uses a distinct soft blue-gray background (`#f1f5f8`) while the remaining page stays white, external object borders have been removed, the language switcher uses UA 🇺🇦 / EN 🇬🇧 buttons with a soft blue-gray active state, the provided horizontal Oranta logo is loaded from `assets/logo-oranta-horizontal.png`, the main thank-you copy has been replaced with the latest text in `content/text-1-thank-you.md`, donation contact details are populated with clickable Zelle/PayPal email links, donation values use regular sentence case, and the EIN `39-2800449` appears on its own line without a highlight.
+**Current local-only updates:** the header uses a distinct soft blue-gray background (`#f1f5f8`) while the remaining page stays white, external object borders have been removed, the language switcher uses UA 🇺🇦 / EN 🇬🇧 buttons with a soft blue-gray active state and switches all page copy, the provided horizontal Oranta logo is loaded from `assets/logo-oranta-horizontal.png`, the main thank-you copy has been replaced with the latest text in `content/text-1-thank-you.md`, donation contact details are populated with clickable Zelle/PayPal email links, donation values use regular sentence case, and the EIN `39-2800449` appears on its own line without a highlight.
 
 ## Current layout (as built)
 
@@ -14,7 +14,7 @@ Header, left → right (nothing else):
 
 1. Logo image (`assets/logo-oranta-horizontal.png`) — provided horizontal icon + ORANTA wordmark
 2. Nav plate (flush items with hairline dividers, no external border): About / **Projects** / Request Help / **Reports**
-3. Languages: **EN selected**, UA inactive; buttons show `UA 🇺🇦` / `EN 🇬🇧` (visual toggle only; no Ukrainian copy yet)
+3. Languages: **EN selected**, UA inactive; buttons show `UA 🇺🇦` / `EN 🇬🇧` and switch the page between English and Ukrainian copy
 4. Donate (scrolls to Donation Options)
 
 Two columns under the header:
@@ -99,6 +99,6 @@ HTML mockup is the spec. Remaining product copy:
 
 - Real EIN
 - Footer links and contact
-- Ukrainian translations
+- Ukrainian translations (implemented in the mockup and `content/*-ua.*` source files)
 
 When Figma MCP is available: upload assets, rebuild the Figma file to match `mockup/`.
