@@ -173,6 +173,19 @@ img {
   background: #004494;
 }
 
+.donate-btn:focus-visible,
+.support-btn:focus-visible,
+.lang-btn:focus-visible,
+.accordion-toggle:focus-visible,
+.nav-item:focus-visible,
+.footer-nav a:focus-visible,
+.footer-email:focus-visible,
+.footer-bottom a:focus-visible,
+.social-links a:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 3px;
+}
+
 .hero {
   max-width: var(--max);
   margin: 0 auto;
@@ -218,6 +231,7 @@ img {
   z-index: 1;
   background: #fff;
   padding: 0;
+  scroll-margin-top: calc(var(--header-h) + 20px);
 }
 
 .accordion-toggle {
@@ -297,9 +311,8 @@ img {
   text-underline-offset: 2px;
 }
 
-.ein {
-  display: block;
-  margin-top: 4px;
+.accordion-body p.ein {
+  margin-top: 12px;
   font-weight: var(--weight-extra-bold);
 }
 
@@ -564,6 +577,30 @@ img {
 }
 
 @media (max-width: 560px) {
+  .header-inner {
+    padding: 12px 20px;
+    gap: 12px;
+  }
+
+  .logo img {
+    height: 52px;
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .nav-plate {
+    width: 100%;
+  }
+
+  .nav-item {
+    flex: 1 1 0;
+    padding: 12px 8px;
+    font-size: 10px;
+    letter-spacing: 0.04em;
+  }
+
   .site-footer {
     padding: 40px 20px 20px;
   }

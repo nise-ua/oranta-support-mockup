@@ -2,7 +2,7 @@
 
 for visiting Oranta’s donation page and considering supporting our mission!
 
-Every day, because of people like you, we are able to provide help where it is needed most. Your trust in our organization means more than financial support. It represents hope, compassion, and tangible help for those facing the challenges of war and humanitarian crises.
+Every day, because of people like you, we are able to provide help where it is needed most. Your trust in our organization means more to us than financial support. It represents hope, compassion, and tangible help for those facing the challenges of war and humanitarian crises.
 
 At Oranta, we focus on three critical areas: Tactical Medicine, Pharmacology & General Medicine, and Animal Rescue & Care.
 

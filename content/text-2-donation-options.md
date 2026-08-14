@@ -3,7 +3,7 @@
 We are grateful for every contribution and strive to make donating as convenient as possible. Oranta currently accepts donations using several methods:
 
 - Zelle: Oranta.UA.USA@gmail.com
-- PayPal: Oranta.UA.USA@gmail.com
+- PayPal: send to Oranta.UA.USA@gmail.com
 - Personal or business checks payable to Oranta (please write “Donation” in the memo line)
 - Cash donations at our community events and fundraisers
 
