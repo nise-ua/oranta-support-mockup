@@ -205,7 +205,6 @@ img {
 
 .panel {
   background: var(--paper);
-  border: 1px solid var(--line);
   padding: 0;
 }
 

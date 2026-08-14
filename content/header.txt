@@ -1,0 +1,11 @@
+Logo: Oranta (attached mark)
+
+Nav (flush buttons in a plate):
+About
+Projects
+Help Request
+Reports
+
+Language: EN (default) / UA
+
+Donate
