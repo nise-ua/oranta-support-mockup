@@ -6,15 +6,15 @@ Open: `mockup/index.html` or `http://127.0.0.1:8765/mockup/` if the local server
 
 Files: `mockup/index.html`, `mockup/styles.css`, `mockup/script.js`.
 
-**Current local-only updates:** page backgrounds are white, external object borders have been removed, and the language switcher uses UA 🇺🇦 / EN 🇬🇧 buttons.
+**Current local-only updates:** page backgrounds are white, external object borders have been removed, the language switcher uses UA 🇺🇦 / EN 🇬🇧 buttons with a soft blue-gray active state, and the provided horizontal Oranta logo is loaded from `assets/logo-oranta-horizontal.png`.
 
 ## Current layout (as built)
 
 Header, left → right (nothing else):
 
-1. Logo image (`assets/logo-oranta.png`) — icon + ORANTA wordmark as one block
-2. Nav plate (pill, 1px stroke, flush items, hairline dividers): About / **Projects** / Help Request / **Reports**
-3. Language: **EN selected**, UA inactive (visual toggle only; no UA copy yet)
+1. Logo image (`assets/logo-oranta-horizontal.png`) — provided horizontal icon + ORANTA wordmark
+2. Nav plate (flush items with hairline dividers, no external border): About / **Projects** / Help Request / **Reports**
+3. Language: **EN selected**, UA inactive; buttons show `UA 🇺🇦` / `EN 🇬🇧` (visual toggle only; no UA copy yet)
 4. Donate (scrolls to Donation Options)
 
 Two columns under the header:
@@ -55,7 +55,7 @@ Skills: `figma-use` before every `use_figma`; `figma-generate-design` for page a
 
 ## Visual reference
 
-https://en.ptahy.vidchui.org/support — off-white, high-contrast black, Montserrat, thin dividers, pill buttons. Wireframe: `assets/wireframe-oranta-support.png`. Client header/accordion rules override the sketch.
+https://en.ptahy.vidchui.org/support — off-white, high-contrast black, Montserrat, thin dividers, pill buttons. The local mockup overrides the reference with a white background and no external object borders. Wireframe: `assets/wireframe-oranta-support.png`. Client header/accordion rules override the sketch.
 
 ## Assets / copy
 
@@ -63,7 +63,7 @@ See `assets/README.md`.
 
 | Use | Path |
 | --- | --- |
-| Logo | `assets/logo-oranta.png` |
+| Logo | `assets/logo-oranta-horizontal.png` |
 | Photo under IRS column | `assets/photo-tactical-medicine-kits.png` |
 | Wireframe | `assets/wireframe-oranta-support.png` |
 | Text 1 | `content/text-1-thank-you.md` |
