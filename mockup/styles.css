@@ -587,10 +587,24 @@ img {
   }
 
   .header-actions {
+    order: 2;
+    flex: 1 1 100%;
+    justify-content: flex-end;
     gap: 8px;
   }
 
+  .lang-btn {
+    padding: 8px 10px;
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+
+  .lang-btn span:first-child {
+    display: none;
+  }
+
   .nav-plate {
+    order: 3;
     width: 100%;
   }
 
