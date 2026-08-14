@@ -3,9 +3,9 @@ Logo: Oranta (attached mark)
 Nav (flush buttons in a plate):
 About
 Projects
-Help Request
+Request Help
 Reports
 
-Language: EN (default) / UA
+Languages: EN (default) / UA
 
 Donate

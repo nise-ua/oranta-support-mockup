@@ -13,8 +13,8 @@ Files: `mockup/index.html`, `mockup/styles.css`, `mockup/script.js`.
 Header, left → right (nothing else):
 
 1. Logo image (`assets/logo-oranta-horizontal.png`) — provided horizontal icon + ORANTA wordmark
-2. Nav plate (flush items with hairline dividers, no external border): About / **Projects** / Help Request / **Reports**
-3. Language: **EN selected**, UA inactive; buttons show `UA 🇺🇦` / `EN 🇬🇧` (visual toggle only; no UA copy yet)
+2. Nav plate (flush items with hairline dividers, no external border): About / **Projects** / Request Help / **Reports**
+3. Languages: **EN selected**, UA inactive; buttons show `UA 🇺🇦` / `EN 🇬🇧` (visual toggle only; no Ukrainian copy yet)
 4. Donate (scrolls to Donation Options)
 
 Two columns under the header:
@@ -22,7 +22,7 @@ Two columns under the header:
 - **Left:** Text 1 (`content/text-1-thank-you.md`)
 - **Right, one shared rectangle:**
   - **Donation Options** accordion — collapsed by default; title + `+`. Expanded: Text 2 intro, then Zelle and PayPal rows with clickable `Oranta.UA.USA@gmail.com` links, checks payable to Oranta with “Donation” in the memo line, cash donations at community events and fundraisers, and the “In addition…” paragraph. Do not use Mariah.
-  - **THE IRS INFO** accordion — same pattern as Donation Options (title + `+`, collapsed by default), **inside the same panel**, not a second rectangle. Copy from `content/text-3-irs-info.md`. EIN is `39-2800449`.
+  - **IRS Information** accordion — same pattern as Donation Options (title + `+`, collapsed by default), **inside the same panel**, not a second rectangle. Copy from `content/text-3-irs-info.md`. EIN is `39-2800449`.
 - **Photo** immediately under that panel, **same width as the right column / IRS stack** (`assets/photo-irs-info.jpg`). Not full viewport width.
 
 **Running line** is full viewport width, **below the two-column + photo block** (not constrained to the right column). Copy: `YOUR DONATIONS ARE SAVING LIVES` (`content/running-line.txt`). Repeat as a marquee.

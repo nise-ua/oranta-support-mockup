@@ -2,7 +2,7 @@
 
 ## Tactical Medicine
 
-Providing lifesaving medical supplies, training, and equipment to those working in high-risk environments and emergency situations.
+Providing lifesaving medical supplies, training, and equipment to people working in high-risk environments and responding to emergencies.
 
 ## Pharmacology & General Medicine
 
