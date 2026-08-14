@@ -1,6 +1,6 @@
 :root {
-  --bg: #f3f2ee;
-  --paper: #fafaf7;
+  --bg: #ffffff;
+  --paper: #ffffff;
   --ink: #111111;
   --muted: #5c5c5c;
   --line: #111111;
@@ -103,7 +103,7 @@ img {
 
 .nav-item.is-active,
 .nav-item:hover {
-  background: #ecece8;
+  background: #f5f5f5;
 }
 
 .header-actions {
@@ -123,10 +123,10 @@ img {
 
 .lang-btn {
   font: inherit;
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 800;
-  letter-spacing: 0.08em;
-  padding: 10px 14px;
+  line-height: 1;
+  padding: 8px 10px;
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -352,7 +352,7 @@ img {
   aspect-ratio: 4 / 3;
   overflow: hidden;
   border: 1px solid rgba(17, 17, 17, 0.2);
-  background: #e8e7e2;
+  background: #fff;
 }
 
 .card-photo img {
